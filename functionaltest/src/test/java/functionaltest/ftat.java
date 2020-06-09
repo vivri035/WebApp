@@ -57,13 +57,13 @@ public class ftat {
 		WebElement repair = wait.until(
 				ExpectedConditions.visibilityOfElementLocated(By.xpath("//font[text()='Create Repair Ticket']")));
 		repair.isDisplayed();
-		WebElement cancel = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Cancel']")));
-		cancel.click();
-		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-		Thread.sleep(3000);
-		WebElement repair1 = wait
-				.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//h2[text()='Repair Ticket Page']")));
-		repair1.isDisplayed();
+		//WebElement cancel = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[text()='Cancel']")));
+		//cancel.click();
+		//driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		//Thread.sleep(3000);
+		//WebElement repair1 = wait
+		//		.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//h2[text()='Repair Ticket Page']")));
+		//repair1.isDisplayed();
 	}
 
 	@Test(priority = 2)
